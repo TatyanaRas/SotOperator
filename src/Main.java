@@ -2,18 +2,18 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        int srNaSchet = 100;//средства на счете
-        int sumPopln = 1100;// сумма пополнения
-        int nacSumBon = 0;//начальная сумма бонусов
-        int bonZaPopol = sumPopln / 100 * 1;//бонусы за пополнение
-        int itogSumBon = nacSumBon + bonZaPopol;//итоговая сумма бонусов
-        int sumNaScete = srNaSchet + sumPopln + itogSumBon;//итоговая сумма на счете с бонусами
-        if (sumPopln > 1000) {
-            System.out.println(itogSumBon);//колличество бонусных рублей
-            System.out.println(sumNaScete);//сумма на счете
+        int fundsAccount = 100;//средства на счете
+        int amountDeposit = 1100;// сумма пополнения
+        int initAmountBonus = 0;//начальная сумма бонусов
+        int depositBonus = amountDeposit / 100 * 1;//бонусы за пополнение
+        int totalAmountBonus = initAmountBonus + depositBonus;//итоговая сумма бонусов
+        int amountAccount = fundsAccount + amountDeposit + totalAmountBonus;//итоговая сумма на счете с бонусами
+        if (amountDeposit > 1000) {
+            System.out.println(totalAmountBonus);//колличество бонусных рублей
+            System.out.println(amountAccount);//сумма на счете
         } else {
-            System.out.println(nacSumBon);//бонусы
-            System.out.println(srNaSchet + sumPopln);//сумма на счете
+            System.out.println(initAmountBonus);//бонусы
+            System.out.println(fundsAccount + amountDeposit);//сумма на счете
 
         }
 
